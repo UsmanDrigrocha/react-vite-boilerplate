@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bricolage Grotesque';
+    scroll-behavior: smooth;
+}
+
+:root {
+    --purple: #413D99;
+    --light-black-bg: #141414;
+    --white: white;
+    --anchor-hover: magenta;
+}
+
+::selection {
+    color: white;
+    background-color: var(--purple);
+}
+
+body {
+    height: 100vh;
+}
+
+a {
+    cursor: pointer;
+    transition: .4s;
+    text-decoration: none;
+
+    &:hover {
+        color: var(--anchor-hover);
+    }
+}
